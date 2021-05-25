@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.bubble {
+    left: 0;
+    top: 0;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: lightblue;
+    transition: linear 2s, transform 0.2s;
+}
+
+.bubble:hover {
+    transform: scale (1.7);
+}
+
+.bubble--burst{
+    transform: scale(1.8);
+}
