@@ -24,7 +24,7 @@ class Bubble {
     this.height = this.randomNumber(60, 20);
     this.width = this.height;
 
-    this.bubbleEnd.call(this.bubbleSpan, this.randomNumber(6000, 3000));
+    this.bubbleEnd.call(this.bubbleSpan, this.randomNumber(10000, 6000));
   }
 
   // creates and appends a new bubble in the DOM
