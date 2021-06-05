@@ -1,6 +1,22 @@
 var bubble = document.getElementById("bubble");
 
-bubble.style.color = "black";
+let start = Date.now();
+
+let timer = setInterval(function(){
+
+    let timePassed = Date.now() - start;
+
+    if (timePassed >= 6000) {
+        clearInterval(timer);
+        return;
+    }
+
+    draw(timePassed);
+}, 20);
+
+function draw(timePassed) {
+    bubble.style.bottom = timePassed / 8 + 'px';
+}
 
 bubble.addEventListener("click", function (event){
     bubble.style.display = "none";
@@ -8,12 +24,7 @@ bubble.addEventListener("click", function (event){
 
 
 
-
-
-
-
-
-/*const root = document.querySelector("#app");
+/*const root = document.querySelector("#bubble");
 let { innerHeight, innerWidth } = window;
 console.log(innerHeight, innerWidth);
 if (innerHeight < 300) {
@@ -75,11 +86,7 @@ class Bubble {
   }
 
   randomColor() {
-    return `rgba(
-        ${this.randomNumber(0, 255)},
-        ${this.randomNumber(0, 255)},
-        ${this.randomNumber(0, 255)}, 
-        ${this.randomNumber(0.1, 1)})`;
+    return `rgba( 0, 0, 0)`;
   }
 
   bubbleEnd(removingTime = 0) {
@@ -101,5 +108,5 @@ class Bubble {
 
 setInterval(function () {
   requestAnimationFrame(new Bubble());
-}, 300);*/
+}, 300); */
 
