@@ -7,7 +7,7 @@ body {
 }
 
 
-.bubble {
+#bubble {
     position: absolute;
     top: 0;
     left: 0;
@@ -16,10 +16,10 @@ body {
     transition: linear 2s, transform 0.2s;
   }
 
-.bubble:hover {
-    font-size: x-large;
+#bubble:hover {
+    font-size: 130%;
 }
 
-.bubble--burst{
+#bubble--burst{
     transform: scale(1.8);
 }

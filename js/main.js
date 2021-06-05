@@ -1,8 +1,10 @@
 var bubble = document.getElementById("bubble");
 
-console.log(bubble);
+bubble.style.color = "black";
 
-
+bubble.addEventListener("click", function (event){
+    bubble.style.display = "none";
+});
 
 
 
@@ -83,7 +85,7 @@ class Bubble {
   bubbleEnd(removingTime = 0) {
     setTimeout(
       () => {
-        requestAnimationFrame(this.classList.add("bubble--bust"));
+        requestAnimationFrame(this.classList.add("bubble--burst"));
       },
       removingTime === 0 ? removingTime : removingTime - 100
     );
