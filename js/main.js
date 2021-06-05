@@ -1,4 +1,17 @@
-const root = document.querySelector("#app");
+var bubble = document.getElementById("bubble");
+
+console.log(bubble);
+
+
+
+
+
+
+
+
+
+
+/*const root = document.querySelector("#app");
 let { innerHeight, innerWidth } = window;
 console.log(innerHeight, innerWidth);
 if (innerHeight < 300) {
@@ -86,4 +99,5 @@ class Bubble {
 
 setInterval(function () {
   requestAnimationFrame(new Bubble());
-}, 300);
+}, 300);*/
+
