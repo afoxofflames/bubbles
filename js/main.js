@@ -1,4 +1,4 @@
-const root = document.getElementById("bubble");
+const root = document.getElementById("app");
 //getting "bubble" from HTML
 
 
@@ -57,39 +57,11 @@ bubbleEnd(removingTime = 0){
 
     setTimeout(() => {
         this.remove();
-        bubbles.push(new Bubble())
+        bubbles.push(new Bubble)
     }, removingTime)
 }
 }
 
 setInterval(function () {
-    new Bubble()
+    new Bubble
 }, 1000)
-
-/*
-let start = Date.now();
-//remember date time
-
-let timer = setInterval(function(){
-    //how much time has passed from the start?
-
-    let timePassed = Date.now() - start;
-
-    if (timePassed >= 6000) {
-        clearInterval(timer);//finish animation after 6 secs
-        return;
-    }
-    //draw animation at the moment timePassed
-    draw(timePassed);
-}, 20);
-
-//as timePassed goes from 0 - 6000
-//y axis values go up
-function draw(timePassed) {
-    root.style.bottom = timePassed / 8 + 'px';
-}
-
-root.addEventListener("click", function (event){
-    root.style.display = "none";
-});
-*/
