@@ -11,7 +11,7 @@ p {
 }
 
 
-#bubble {
+.bubble {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -20,6 +20,6 @@ p {
     transition: linear 2s, transform 0.2s;
   }
 
-#bubble:hover {
+.bubble:hover {
     transform: scale(1.7);
 }

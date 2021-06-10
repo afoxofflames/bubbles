@@ -1,16 +1,12 @@
-var bubble = document.getElementById("bubble");
+const root = document.getElementById("bubble");
 //getting "bubble" from HTML
 
 
-console.log(broswerWidth,browserHeight);
+console.log(innerWidth,innerHeight);
 
-function getRandomNumber(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min);
-  }
+class Bubble {
 
-function makeBubble() {
+constructor() {
     this.bubbleSpan = undefined;
     this.handleNewBubble();
 
@@ -25,14 +21,52 @@ function makeBubble() {
     this.bubbleEnd.call(this.bubbleSpan, this.getRandomNumber(10000,6000));
 }
 
-function handleNewBubble () {
-    this.bubbleSpan = document.createElement
+handleNewBubble () {
+    this.bubbleSpan = document.createElement("span");
+    this.bubbleSpan.classList.add("bubble");
+    const newContent = document.createTextNode("Bubbles")
+    this.bubbleSpan.appendChild(newContent);
+    this.handlePosition();
+
+    this.bubbleSpan.addEventListener("click",this.bubbleEnd);
 }
 
+handlePosition() {
+    const randomY = this.getRandomNumber (60, -60);
+    const randomX = this.getRandomNumber (60, -60);
 
+    this.posY = this.getRandomNumber (innerHeight - 20, 20);
+    this.posX = this.getRandomNumber (innerWidth - 20, 20);
 
+    this.bubbleSpan.style.top = this.posY + "px";
+    this.bubbleSpan.style.left = this.posX + "px";
 
+    const randomSec = this.getRandomNumber(4000, 200);
 
+    setTimeout(this.handlePosition.bind(this),randomSec);
+}
+
+getRandomNumber(max, min) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+bubbleEnd(removingTime = 0){
+    setTimeout(() => {
+        this.classList.add('bubble--burst');
+    }, removingTime === 0 ? removingTime : removingTime - 100);
+
+    setTimeout(() => {
+        this.remove();
+        bubbles.push(new Bubble())
+    }, removingTime)
+}
+}
+
+setInterval(function () {
+    new Bubble()
+}, 1000)
+
+/*
 let start = Date.now();
 //remember date time
 
@@ -52,9 +86,10 @@ let timer = setInterval(function(){
 //as timePassed goes from 0 - 6000
 //y axis values go up
 function draw(timePassed) {
-    bubble.style.bottom = timePassed / 8 + 'px';
+    root.style.bottom = timePassed / 8 + 'px';
 }
 
-bubble.addEventListener("click", function (event){
-    bubble.style.display = "none";
+root.addEventListener("click", function (event){
+    root.style.display = "none";
 });
+*/
