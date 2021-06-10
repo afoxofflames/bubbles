@@ -1,19 +1,56 @@
 var bubble = document.getElementById("bubble");
+//getting "bubble" from HTML
+
+
+console.log(broswerWidth,browserHeight);
+
+function getRandomNumber(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+function makeBubble() {
+    this.bubbleSpan = undefined;
+    this.handleNewBubble();
+
+    this.posY = this.getRandomNumber(innerHeight - 20, 20);
+    this.posX = this.getRandomNumber(innerHeight -20, 20);
+
+    this.bubbleSpan.style.top = this.posY + "px";
+    this.bubbleSpan.style.left = this.posX + "px";
+
+    this.fontSize = this.getRandomNumber(20, 50);
+
+    this.bubbleEnd.call(this.bubbleSpan, this.getRandomNumber(10000,6000));
+}
+
+function handleNewBubble () {
+    this.bubbleSpan = document.createElement
+}
+
+
+
+
 
 let start = Date.now();
+//remember date time
 
 let timer = setInterval(function(){
+    //how much time has passed from the start?
 
     let timePassed = Date.now() - start;
 
     if (timePassed >= 6000) {
-        clearInterval(timer);
+        clearInterval(timer);//finish animation after 6 secs
         return;
     }
-
+    //draw animation at the moment timePassed
     draw(timePassed);
 }, 20);
 
+//as timePassed goes from 0 - 6000
+//y axis values go up
 function draw(timePassed) {
     bubble.style.bottom = timePassed / 8 + 'px';
 }
@@ -21,92 +58,3 @@ function draw(timePassed) {
 bubble.addEventListener("click", function (event){
     bubble.style.display = "none";
 });
-
-
-
-/*const root = document.querySelector("#bubble");
-let { innerHeight, innerWidth } = window;
-console.log(innerHeight, innerWidth);
-if (innerHeight < 300) {
-  innerHeight = 350;
-}
-if (innerWidth < 300) {
-  innerWidth = 750;
-}
-
-class Bubble {
-  constructor() {
-    this.bubbleSpan = undefined;
-    this.handleNewBubble();
-    this.color = this.randomColor();
-
-    this.posY = this.randomNumber(innerHeight - 20, 20);
-    this.posX = this.randomNumber(innerWidth - 20, 20);
-
-    this.bubbleSpan.style.top = this.posY + "px";
-    this.bubbleSpan.style.left = this.posX + "px";
-
-    // setting height and width of the bubble
-    this.height = this.randomNumber(60, 20);
-    this.width = this.height;
-
-    this.bubbleEnd.call(this.bubbleSpan, this.randomNumber(10000, 6000));
-  }
-
-  // creates and appends a new bubble in the DOM
-  handleNewBubble() {
-    this.bubbleSpan = document.createElement("span");
-    this.bubbleSpan.classList.add("bubble");
-    root.append(this.bubbleSpan);
-    this.handlePosition();
-    this.bubbleSpan.addEventListener("click", this.bubbleEnd);
-  }
-
-  handlePosition() {
-    // positioning the bubble in different random X and Y
-    const randomY = this.randomNumber(60, -60);
-    const randomX = this.randomNumber(60, -60);
-
-    this.bubbleSpan.style.backgroundColor = this.color;
-    this.bubbleSpan.style.height = this.height + "px";
-    this.bubbleSpan.style.width = this.height + "px";
-
-    this.posY = this.randomNumber(innerHeight - 20, 20);
-    this.posX = this.randomNumber(innerWidth - 20, 20);
-
-    this.bubbleSpan.style.top = this.posY + "px";
-    this.bubbleSpan.style.left = this.posX + "px";
-
-    const randomSec = this.randomNumber(4000, 200);
-    setTimeout(this.handlePosition.bind(this), randomSec); // calling for re-position of bubble
-  }
-
-  randomNumber(max, min) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
-
-  randomColor() {
-    return `rgba( 0, 0, 0)`;
-  }
-
-  bubbleEnd(removingTime = 0) {
-    setTimeout(
-      () => {
-        requestAnimationFrame(this.classList.add("bubble--burst"));
-      },
-      removingTime === 0 ? removingTime : removingTime - 100
-    );
-
-    setTimeout(() => {
-      requestAnimationFrame(this.remove());
-      requestAnimationFrame(new Bubble());
-    }, removingTime);
-  }
-}
-
-// creating many bubble instance
-
-setInterval(function () {
-  requestAnimationFrame(new Bubble());
-}, 300); */
-

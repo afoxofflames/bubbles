@@ -23,7 +23,3 @@ p {
 #bubble:hover {
     transform: scale(1.7);
 }
-
-#bubble--burst{
-    transform: scale(1.8);
-}
