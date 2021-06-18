@@ -74,3 +74,43 @@ document.getElementById('bub18').onclick = function(event) {
 document.getElementById('bub20').onclick = function(event) {
     document.getElementById('bub20').style.display = "none";
 }
+
+document.getElementById('bub21').onclick = function(event) {
+    document.getElementById('bub21').style.display = "none";
+}
+
+document.getElementById('bub22').onclick = function(event) {
+    document.getElementById('bub22').style.display = "none";
+}
+
+document.getElementById('bub23').onclick = function(event) {
+    document.getElementById('bub23').style.display = "none";
+}
+
+document.getElementById('bub24').onclick = function(event) {
+    document.getElementById('bub24').style.display = "none";
+}
+
+document.getElementById('bub25').onclick = function(event) {
+    document.getElementById('bub25').style.display = "none";
+}
+
+document.getElementById('bub26').onclick = function(event) {
+    document.getElementById('bub26').style.display = "none";
+}
+
+document.getElementById('bub27').onclick = function(event) {
+    document.getElementById('bub27').style.display = "none";
+}
+
+document.getElementById('bub28').onclick = function(event) {
+    document.getElementById('bub28').style.display = "none";
+}
+
+document.getElementById('bub29').onclick = function(event) {
+    document.getElementById('bub29').style.display = "none";
+}
+
+document.getElementById('bub30').onclick = function(event) {
+    document.getElementById('bub30').style.display = "none";
+}
