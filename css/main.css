@@ -19,48 +19,12 @@ body {
 
 /* KEYFRAMES */
 
-@-webkit-keyframes animateBubble {
-    0% {
-        margin-top: 1000px;
-    }
-    100% {
-        margin-top: -100%;
-    }
-}
-
-@-moz-keyframes animateBubble {
-    0% {
-        margin-top: 1000px;
-    }
-    100% {
-        margin-top: -100%;
-    }
-}
-
 @keyframes animateBubble {
     0% {
-        margin-top: 1000px;
+        margin-top: 700px;
     }
     100% {
-        margin-top: -100%;
-    }
-}
-
-@-webkit-keyframes sideWays { 
-    0% { 
-        margin-left:0px;
-    }
-    100% { 
-        margin-left:50px;
-    }
-}
-
-@-moz-keyframes sideWays { 
-    0% { 
-        margin-left:0px;
-    }
-    100% { 
-        margin-left:50px;
+        margin-top: -75%;
     }
 }
 
@@ -73,19 +37,40 @@ body {
     }
 }
 
+@keyframes theEnd {
+    0% {
+        transform:scale(2.2);
+        color:black;
+    }
+    50% {
+        transform: (2.5);
+    }
+    100% { transform: scale(2.8);
+        color: white;
+
+    }
+
+}
+
+@keyframes goWhite {
+    0% {
+        color:black;
+    }
+    100% {
+        color:white;
+    }
+
+}
+
 /* ANIMATIONS */
 
 .x1 {
-    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 60s;
 	
-	left: -5%;
+	left: 1%;
 	top: 5%;
-	
-	-webkit-transform: scale(0.6);
-	-moz-transform: scale(0.6);
 	transform: scale(0.6);
+    animation-fill-mode: forwards;
 }
 
 .x1:hover {
@@ -96,16 +81,12 @@ body {
 }
 
 .x2 {
-    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	
+	animation: animateBubble 18s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 54s;
+
 	left: 5%;
 	top: 80%;
-	
-	-webkit-transform: scale(0.4);
-	-moz-transform: scale(0.4);
 	transform: scale(0.4);
+    animation-fill-mode: forwards;
 }
 
 .x2:hover {
@@ -116,16 +97,12 @@ body {
 }
 
 .x3 {
-    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 22s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 66s;
 	
 	left: 10%;
 	top: 40%;
-	
-	-webkit-transform: scale(0.7);
-	-moz-transform: scale(0.7);
 	transform: scale(0.7);
+    animation-fill-mode: forwards;
 }
 
 .x3:hover {
@@ -136,16 +113,12 @@ body {
 }
 
 .x4 {
-    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 19s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 57s;
 	
 	left: 20%;
 	top: 0;
-	
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
 	transform: scale(0.3);
+    animation-fill-mode: forwards;
 }
 
 .x4:hover {
@@ -156,16 +129,12 @@ body {
 }
 
 .x5 {
-    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 17s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 51s;
 	
 	left: 30%;
 	top: 50%;
-	
-	-webkit-transform: scale(0.5);
-	-moz-transform: scale(0.5);
 	transform: scale(0.5);
+    animation-fill-mode: forwards;
 }
 
 .x5:hover {
@@ -176,16 +145,12 @@ body {
 }
 
 .x6 {
-    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 21s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 63s;
 	
 	left: 50%;
-	top: 0;
-	
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
+	top: 0%;
 	transform: scale(0.8);
+    animation-fill-mode: forwards;
 }
 
 .x6:hover {
@@ -196,16 +161,12 @@ body {
 }
 
 .x7 {
-    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 20s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 60s;
 	
 	left: 65%;
 	top: 70%;
-	
-	-webkit-transform: scale(0.4);
-	-moz-transform: scale(0.4);
 	transform: scale(0.4);
+    animation-fill-mode: forwards;
 }
 
 .x7:hover {
@@ -216,16 +177,12 @@ body {
 }
 
 .x8 {
-    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    animation: animateBubble 22s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 66s;
 	
 	left: 80%;
 	top: 10%;
-	
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
 	transform: scale(0.3);
+    animation-fill-mode: forwards;
 }
 
 .x8:hover {
@@ -236,16 +193,12 @@ body {
 }
 
 .x9 {
-    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 23s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 69s;
 	
 	left: 90%;
 	top: 50%;
-	
-	-webkit-transform: scale(0.6);
-	-moz-transform: scale(0.6);
 	transform: scale(0.6);
+    animation-fill-mode: forwards;
 }
 
 .x9:hover {
@@ -256,16 +209,12 @@ body {
 }
 
 .x10 {
-    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 21s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 63s;
 	
 	left: 80%;
 	top: 80%;
-	
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
 	transform: scale(0.3);
+    animation-fill-mode: forwards;
 }
 
 .x10:hover {
@@ -276,17 +225,14 @@ body {
 }
 
 
+
 .x11 {
-    -webkit-animation: animateBubble 23s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 23s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 23s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 18s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 54s;
 	
 	left: 20%;
 	top: 60%;
-	
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
 	transform: scale(1);
+    animation-fill-mode: forwards;
 }
 
 .x11:hover {
@@ -297,16 +243,12 @@ body {
 }
 
 .x12 {
-    -webkit-animation: animateBubble 29s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 29s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 29s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 23s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 69s;
 	
 	left: 20%;
 	top: 60%;
-	
-	-webkit-transform: scale(2);
-	-moz-transform: scale(2);
 	transform: scale(2);
+    animation-fill-mode: forwards;
 }
 
 .x12:hover {
@@ -318,16 +260,12 @@ body {
 
 
 .x13 {
-    -webkit-animation: animateBubble 24s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 24s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 24s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 18s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 54s;
 	
 	left: 80%;
 	top: 40%;
-	
-	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
 	transform: scale(1.5);
+    animation-fill-mode: forwards;
 }
 
 .x13:hover {
@@ -338,16 +276,12 @@ body {
 }
 
 .x14 {
-    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 22s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 66s;
 	
-	left:50%;
+	left: 50%;
 	top: 60%;
-	
-	-webkit-transform: scale(3);
-	-moz-transform: scale(3);
 	transform: scale(3);
+    animation-fill-mode: forwards;
 }
 
 .x14:hover {
@@ -358,16 +292,12 @@ body {
 }
 
 .x15 {
-    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 20s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 60s;
 	
 	left: 40%;
 	top: 30%;
-	
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
 	transform: scale(1.2);
+    animation-fill-mode: forwards;
 }
 
 .x15:hover {
@@ -378,16 +308,12 @@ body {
 }
 
 .x16 {
-    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 20s linear 2, sideWays 3s ease-in-out infinite alternate, goWhite 1s 40s;
 	
 	left: 70%;
-	top: 50%;
-	
-	-webkit-transform: scale(1.7);
-	-moz-transform: scale(1.7);
+	top: 10%;
 	transform: scale(1.7);
+    animation-fill-mode: forwards;
 }
 
 .x16:hover {
@@ -398,16 +324,12 @@ body {
 }
 
 .x17 {
-    -webkit-animation: animateBubble 27s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 27s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 27s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 21s linear 2, sideWays 2s ease-in-out infinite alternate, goWhite 1s 42s;
 	
 	left: 10%;
 	top: 70%;
-	
-	-webkit-transform: scale(1.3);
-	-moz-transform: scale(1.3);
 	transform: scale(1.3);
+    animation-fill-mode: forwards;
 }
 
 .x17:hover {
@@ -418,16 +340,12 @@ body {
 }
 
 .x18 {
-    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 16s linear 2, sideWays 3s ease-in-out infinite alternate, goWhite 1s 32s;
 	
-	left: 50%;
-	top: 50%;
-	
-	-webkit-transform: scale(0.9);
-	-moz-transform: scale(0.9);
-	transform: scale(0.9);
+	left: 70%;
+	top: 10%;
+	transform: scale(.9);
+    animation-fill-mode: forwards;
 }
 
 .x18:hover {
@@ -437,17 +355,16 @@ body {
     transform: scale(1.1);
 }
 
+
+/*19 is the DIFFERENT bubble!*/
+
 .x19 {
-    -webkit-animation: animateBubble 24s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 24s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 24s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 19s linear 4, sideWays 2s ease-in-out infinite alternate, theEnd .1s linear 63s ;
 	
-	left: 60%;
-	top: 20%;
-	
-	-webkit-transform: scale(2.3);
-	-moz-transform: scale(2.3);
+	left: 50%;
+	top: 50%;
 	transform: scale(2.3);
+    animation-fill-mode: forwards;
 }
 
 .x19:hover {
@@ -458,16 +375,12 @@ body {
 }
 
 .x20 {
-    -webkit-animation: animateBubble 29s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 29s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 29s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 23s linear 2, sideWays 3s ease-in-out infinite alternate, goWhite 1s 46s;
 	
 	left: 90%;
-	top: 30%;
-	
-	-webkit-transform: scale(3.3);
-	-moz-transform: scale(3.3);
+	top: 80%;
 	transform: scale(3.3);
+    animation-fill-mode: forwards;
 }
 
 .x20:hover {
@@ -476,6 +389,7 @@ body {
     transition: 0.2s;
     transform: scale(3.5);
 }
+
 
 /* OBJECTS */
 
@@ -486,10 +400,7 @@ body {
 }
 
 .bubble:after {
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
 	border-radius: 50%;
-	
 	content: "";
     height: 180px;
 	left: 10px;

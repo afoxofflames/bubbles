@@ -69,10 +69,7 @@ document.getElementById('bub17').onclick = function(event) {
 document.getElementById('bub18').onclick = function(event) {
     document.getElementById('bub18').style.display = "none";
 }
-
-document.getElementById('bub19').onclick = function(event) {
-    document.getElementById('bub19').style.display = "none";
-}
+//no 19 because we need this for the very end!
 
 document.getElementById('bub20').onclick = function(event) {
     document.getElementById('bub20').style.display = "none";
