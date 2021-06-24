@@ -39,7 +39,7 @@ body {
 
 @keyframes theEnd {
     0% {
-        transform:scale(2.2);
+        transform:scale(2.3);
         color:black;
     }
     50% {
@@ -47,7 +47,7 @@ body {
     }
     100% { transform: scale(2.8);
         color: white;
-
+        margin-top: 50%;
     }
 
 }
