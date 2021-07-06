@@ -6,8 +6,6 @@
 
 - My github link is [here](https://github.com/intervoiddesigns)
 
-- I’m currently learning **Databases, more Javascript**
-
 - My website [intervoiddesigns.com](intervoiddesigns.com)
 
 - Ask me about **Photoshop, Website Design, Graphic Design**
