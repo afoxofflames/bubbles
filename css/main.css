@@ -28,6 +28,17 @@ body {
     }
 }
 
+@keyframes animateBubble2 {
+    0% {
+        color:black;
+        margin-top: 700px;
+    }
+    100% {
+        color:black;
+        margin-top: -75%;
+    }
+}
+
 @keyframes sideWays { 
     0% { 
         margin-left:0px;
@@ -47,7 +58,6 @@ body {
     }
     100% { transform: scale(2.8);
         color: white;
-        margin-top: 50%;
     }
 
 }
@@ -65,7 +75,7 @@ body {
 /* ANIMATIONS */
 
 .x1 {
-	animation: animateBubble 20s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 60s;
+	animation: animateBubble 20s linear 4, sideWays 2s ease-in-out infinite alternate, goWhite 1s 80s;
 	
 	left: 1%;
 	top: 5%;
@@ -81,7 +91,7 @@ body {
 }
 
 .x2 {
-	animation: animateBubble 18s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 54s;
+	animation: animateBubble 18s linear 4, sideWays 3s ease-in-out infinite alternate, goWhite 1s 72s;
 
 	left: 5%;
 	top: 80%;
@@ -97,7 +107,7 @@ body {
 }
 
 .x3 {
-    animation: animateBubble 22s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 66s;
+    animation: animateBubble 22s linear 4, sideWays 2s ease-in-out infinite alternate, goWhite 1s 88s;
 	
 	left: 10%;
 	top: 40%;
@@ -113,7 +123,7 @@ body {
 }
 
 .x4 {
-	animation: animateBubble 19s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 57s;
+	animation: animateBubble 19s linear 4, sideWays 3s ease-in-out infinite alternate, goWhite 1s 76s;
 	
 	left: 20%;
 	top: 0;
@@ -129,7 +139,7 @@ body {
 }
 
 .x5 {
-    animation: animateBubble 17s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 51s;
+    animation: animateBubble 17s linear 4, sideWays 2s ease-in-out infinite alternate, goWhite 1s 68s;
 	
 	left: 30%;
 	top: 50%;
@@ -145,7 +155,7 @@ body {
 }
 
 .x6 {
-    animation: animateBubble 21s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 63s;
+    animation: animateBubble 21s linear 4, sideWays 3s ease-in-out infinite alternate, goWhite 1s 84s;
 	
 	left: 50%;
 	top: 0%;
@@ -161,7 +171,7 @@ body {
 }
 
 .x7 {
-    animation: animateBubble 20s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 60s;
+    animation: animateBubble 20s linear 4, sideWays 2s ease-in-out infinite alternate, goWhite 1s 80s;
 	
 	left: 65%;
 	top: 70%;
@@ -177,7 +187,7 @@ body {
 }
 
 .x8 {
-    animation: animateBubble 22s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 66s;
+    animation: animateBubble 22s linear 4, sideWays 3s ease-in-out infinite alternate, goWhite 1s 88s;
 	
 	left: 80%;
 	top: 10%;
@@ -193,7 +203,7 @@ body {
 }
 
 .x9 {
-    animation: animateBubble 23s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 69s;
+    animation: animateBubble 23s linear 4, sideWays 2s ease-in-out infinite alternate, goWhite 1s 92s;
 	
 	left: 90%;
 	top: 50%;
@@ -209,7 +219,7 @@ body {
 }
 
 .x10 {
-    animation: animateBubble 21s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 63s;
+    animation: animateBubble 21s linear 4, sideWays 3s ease-in-out infinite alternate, goWhite 1s 84s;
 	
 	left: 80%;
 	top: 80%;
@@ -227,7 +237,7 @@ body {
 
 
 .x11 {
-    animation: animateBubble 18s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 54s;
+    animation: animateBubble 18s linear 4, sideWays 2s ease-in-out infinite alternate, goWhite 1s 87s;
 	
 	left: 20%;
 	top: 60%;
@@ -243,7 +253,7 @@ body {
 }
 
 .x12 {
-    animation: animateBubble 23s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 69s;
+    animation: animateBubble 23s linear 4, sideWays 3s ease-in-out infinite alternate, goWhite 1s 92s;
 	
 	left: 20%;
 	top: 60%;
@@ -260,7 +270,7 @@ body {
 
 
 .x13 {
-    animation: animateBubble 18s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 54s;
+    animation: animateBubble 18s linear 4, sideWays 2s ease-in-out infinite alternate, goWhite 1s 72s;
 	
 	left: 80%;
 	top: 40%;
@@ -276,7 +286,7 @@ body {
 }
 
 .x14 {
-    animation: animateBubble 22s linear 3, sideWays 3s ease-in-out infinite alternate, goWhite 1s 66s;
+    animation: animateBubble 22s linear 4, sideWays 3s ease-in-out infinite alternate, goWhite 1s 88s;
 	
 	left: 50%;
 	top: 60%;
@@ -292,7 +302,7 @@ body {
 }
 
 .x15 {
-    animation: animateBubble 20s linear 3, sideWays 2s ease-in-out infinite alternate, goWhite 1s 60s;
+    animation: animateBubble 20s linear 4, sideWays 2s ease-in-out infinite alternate, goWhite 1s 80s;
 	
 	left: 40%;
 	top: 30%;
@@ -308,7 +318,7 @@ body {
 }
 
 .x16 {
-    animation: animateBubble 20s linear 2, sideWays 3s ease-in-out infinite alternate, goWhite 1s 40s;
+    animation: animateBubble 20s linear 2, sideWays 3s ease-in-out infinite alternate, goWhite 1s 40s, animateBubble2 20s linear 60s 1, gowhite 1s 80s;
 	
 	left: 70%;
 	top: 10%;
@@ -324,7 +334,7 @@ body {
 }
 
 .x17 {
-    animation: animateBubble 21s linear 2, sideWays 2s ease-in-out infinite alternate, goWhite 1s 42s;
+    animation: animateBubble 21s linear 2, sideWays 2s ease-in-out infinite alternate, goWhite 1s 42s, animateBubble2 21s linear 63s 1, gowhite 1s 84s;
 	
 	left: 10%;
 	top: 70%;
@@ -340,7 +350,7 @@ body {
 }
 
 .x18 {
-    animation: animateBubble 16s linear 2, sideWays 3s ease-in-out infinite alternate, goWhite 1s 32s;
+    animation: animateBubble 16s linear 2, sideWays 3s ease-in-out infinite alternate, goWhite 1s 32s, animateBubble2 16s linear 48s 1, gowhite 1s 64s;
 	
 	left: 70%;
 	top: 10%;
@@ -359,7 +369,7 @@ body {
 /*19 is the DIFFERENT bubble!*/
 
 .x19 {
-    animation: animateBubble 19s linear 4, sideWays 2s ease-in-out infinite alternate, theEnd .2s linear 63s ;
+    animation: animateBubble 19s linear 7, sideWays 2s ease-in-out infinite alternate, theEnd .1s linear 83s ;
 	
 	left: 50%;
 	top: 50%;
@@ -375,7 +385,7 @@ body {
 }
 
 .x20 {
-    animation: animateBubble 23s linear 2, sideWays 3s ease-in-out infinite alternate, goWhite 1s 46s;
+    animation: animateBubble 23s linear 2, sideWays 3s ease-in-out infinite alternate, goWhite .1s 46s, animateBubble2 23s linear 60s 1, gowhite 1s 92s;
 	
 	left: 90%;
 	top: 80%;
@@ -392,7 +402,7 @@ body {
 
 
 .x21 {
-	animation: animateBubble 30s linear 1, sideWays 2s ease-in-out infinite alternate, goWhite 1s 30s;
+	animation: animateBubble 30s linear 1, sideWays 2s ease-in-out infinite alternate, goWhite .1s 30s, animateBubble2 30s linear 60s 1, gowhite 1s 120s;
 	
 	left: 30%;
 	top: 50%;
@@ -408,7 +418,7 @@ body {
 }
 
 .x22 {
-	animation: animateBubble 28s linear 1, sideWays 3s ease-in-out infinite alternate, goWhite 1s 28s;
+	animation: animateBubble 28s linear 1, sideWays 3s ease-in-out infinite alternate, goWhite .1s 28s, animateBubble2 28s linear 60s 1, gowhite 1s 112s;
 
 	left: 50%;
 	top: 10%;
@@ -424,7 +434,7 @@ body {
 }
 
 .x23 {
-    animation: animateBubble 27s linear 1, sideWays 2s ease-in-out infinite alternate, goWhite 1s 27s;
+    animation: animateBubble 27s linear 1, sideWays 2s ease-in-out infinite alternate, goWhite .1s 27s, animateBubble2 27s linear 60s 1, gowhite 1s 108s;
 	
 	left: 10%;
 	top: 20%;
@@ -440,7 +450,7 @@ body {
 }
 
 .x24 {
-	animation: animateBubble 25s linear 1, sideWays 3s ease-in-out infinite alternate, goWhite 1s 25s;
+	animation: animateBubble 25s linear 1, sideWays 3s ease-in-out infinite alternate, goWhite .1s 25s, animateBubble2 25s linear 60s 1, gowhite 1s 100s;
 	
 	left: 20%;
 	top: 80;
@@ -456,7 +466,7 @@ body {
 }
 
 .x25 {
-    animation: animateBubble 26s linear 1, sideWays 2s ease-in-out infinite alternate, goWhite 1s 26s;
+    animation: animateBubble 26s linear 1, sideWays 2s ease-in-out infinite alternate, goWhite .1s 26s, animateBubble2 26s linear 60s 1, gowhite 1s 104s;
 	
 	left: 30%;
 	top: 30%;
@@ -472,7 +482,7 @@ body {
 }
 
 .x26 {
-    animation: animateBubble 27s linear 1, sideWays 3s ease-in-out infinite alternate, goWhite 1s 27s;
+    animation: animateBubble 27s linear 1, sideWays 3s ease-in-out infinite alternate, goWhite .1s 27s, animateBubble2 27s linear 60s 1, gowhite 1s 108s;
 	
 	left: 80%;
 	top: 30%;
@@ -488,7 +498,7 @@ body {
 }
 
 .x27 {
-    animation: animateBubble 28s linear 1, sideWays 2s ease-in-out infinite alternate, goWhite 1s 28s;
+    animation: animateBubble 28s linear 1, sideWays 2s ease-in-out infinite alternate, goWhite .1s 28s, animateBubble2 28s linear 60s 1, gowhite 1s 112s;
 	
 	left: 55%;
 	top: 20%;
@@ -504,7 +514,7 @@ body {
 }
 
 .x28 {
-    animation: animateBubble 29s linear 1, sideWays 3s ease-in-out infinite alternate, goWhite 1s 29s;
+    animation: animateBubble 29s linear 1, sideWays 3s ease-in-out infinite alternate, goWhite .1s 29s, animateBubble2 29s linear 60s 1, gowhite 1s 116s;
 	
 	left: 70%;
 	top: 70%;
@@ -520,7 +530,7 @@ body {
 }
 
 .x29 {
-    animation: animateBubble 30s linear 1, sideWays 2s ease-in-out infinite alternate, goWhite 1s 30s;
+    animation: animateBubble 30s linear 1, sideWays 2s ease-in-out infinite alternate, goWhite .1s 30s, animateBubble2 30s linear 60s 1, gowhite 1s 120s;
 	
 	left: 60%;
 	top: 40%;
@@ -536,7 +546,7 @@ body {
 }
 
 .x30 {
-    animation: animateBubble 31s linear 1, sideWays 3s ease-in-out infinite alternate, goWhite 1s 31s;
+    animation: animateBubble 31s linear 1, sideWays 3s ease-in-out infinite alternate, goWhite .1s 31s, animateBubble2 31s linear 60s 1, gowhite 1s 124s;
 	
 	left: 10%;
 	top: 70%;
@@ -566,4 +576,3 @@ body {
 	left: 10px;
 	position: absolute;
 	width: 180px;
-}
