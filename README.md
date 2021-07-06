@@ -1,10 +1,10 @@
 # bubbles
-<h1 align="center">Hi, I'm Grayson Adams</h1>
+<h2 align="center">Hi, I'm Grayson Adams</h1>
 <h3 align="center">A frontend dev</h3>
 
-- This project was an interactive version of Bill Lessard's poem "Joy"
+- This project is an interactive version of Bill Lessard's poem "Joy"
 
-- I’m currently working on [Joy](https://codepen.io/afoxofflames/pen/dyvrQJb)
+- My github link is [here](https://github.com/intervoiddesigns)
 
 - I’m currently learning **Databases, more Javascript**
 
@@ -13,8 +13,6 @@
 - Ask me about **Photoshop, Website Design, Graphic Design**
 
 - How to reach me **sadams0214@gmail.com**
-
-- Fun fact **I've written a fantasy novel! :)**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
