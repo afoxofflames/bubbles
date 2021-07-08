@@ -2,7 +2,7 @@
 <h2 align="center">Hi, I'm Grayson Adams</h1>
 <h3 align="center">A frontend dev</h3>
 
-- This project is an interactive version of Bill Lessard's poem "Joy"
+- This project is an interactive version of Bill Lessard's poem
 
 - My github link is [here](https://github.com/intervoiddesigns)
 
